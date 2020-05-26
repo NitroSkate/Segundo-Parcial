@@ -20,9 +20,9 @@ public class Categoria {
 	private Integer c_categoria;
 	
 	@Column(name="s_categoria")
-	@Size(max=50, message="No puede exceder los 50 caracteres")
-	@NotEmpty(message="Este campo no debe ir vacio")
-	@NotNull(message="Este campo no debe ir vacio")
+	@Size(max=50, message="El campo sobrepasar la cantidad de 50 caracteres")
+	@NotEmpty(message="El campo nombre categoria no puede estar vacio")
+	@NotNull(message="El campo nombre categoria no puede estar vacio")
 	private String s_categoria;
 	
 	public Categoria() {

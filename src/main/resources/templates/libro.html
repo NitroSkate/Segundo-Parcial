@@ -33,6 +33,7 @@
 				</div>
 				<div class="form-group row">
 					<div class="col-sm-5">
+						<label class="col-sm-2 col-form-label">Categoria:</label>
 						<select class="form-control" th:field="*{categoria.c_categoria}">
 							<option th:each="cat: ${categoria}" th:value="${cat.c_categoria}" th:text="${cat.s_categoria}"></option>
 						</select><br>
@@ -44,7 +45,7 @@
 						<input class="form-control" type="checkbox" name="b_estado" th:value="true"><br>
 					</div>
 				</div>
-				<input type="submit" class="btn btn-light" value="Ingresar Libro">
+				<input type="submit" class="btn btn-light" value="Guardar">
 			</form>
 			</div>
 		</div>

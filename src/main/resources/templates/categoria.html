@@ -11,13 +11,13 @@
 			<div>
 			<form class="form-group"  th:action= "@{/ecategoria}" th:object="${categoria}" method= "post">
 				<div class="form-group row">
-					<label class="col-sm-2 col-form-label">Nombre Categoria:</label>
-					<div class="col-sm-10">
+					<label class="col-sm-3 col-form-label">Nombre Categoria:</label>
+					<div class="col-sm-8">
 						<input class="form-control" type="text" name="s_categoria"><br>
 						<span th:errors = "*{s_categoria}" style = "color : #E81505;"></span>
 					</div>	
 				</div>
-				<input type="submit" class="btn btn-light" value="Ingresar Categoria">
+				<input type="submit" class="btn btn-light" value="Guardar Categoria">
 			</form>
 			</div>
 		</div>			
