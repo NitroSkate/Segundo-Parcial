@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<meta charset="ISO-8859-1">
+<title>Opciones</title>
+</head>
+<body>
+	<div class="container" style="margin-top: 5em">
+		<div class="row align-items-center justify-content-md-center">
+			<label class="font-weight-bold text-success"><th th:text="${msg}"></th></label>
+		</div>
+		<center><a href="/icategoria"><input type="button" class="btn btn-outline-info" value="Ingresar Categoria"></a></center><br>
+		<center><a href="/ilibro"><input type="button" class="btn btn-outline-info" value="Ingresar Libro"></a></center><br>
+		<center><a href="/listado"><input type="button" class="btn btn-outline-info" value="Ver Libros"></a></center><br>
+	</div>
+</body>
+</html>
