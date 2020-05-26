@@ -101,7 +101,7 @@ public class Libro {
 	}
 
 	public String getF_ingreso() throws ParseException {
-		DateFormat dt = new SimpleDateFormat("dd-MM-yyyy hh:mm aa");
+		DateFormat dt = new SimpleDateFormat("dd/MM/yyyy hh:mm aa");
 		Date fecha = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(String.valueOf(f_ingreso));
 		return dt.format(fecha);
 	}
